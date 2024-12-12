@@ -10,12 +10,13 @@ processed_lines = []
 for line in lines:
     if "dict =" in line:
         line = line.split("=", 1)[1].strip()
-        processed_line = ast.literal_eval(line)
-        slovar = defaultdict(set)
-        for x, num in processed_line.items():
-            slovar[x].add(num)
+        line = ast.literal_eval(line)
+        slovar = []
+        for x,num in line.items():
+            stroka = "Peremennoi " + str(x) + " sootvetstvyet znachenie " + str(num)
+            slovar.insert(1, stroka)
 
-        processed_line = 'slovar bydet takim' + str(slovar)[27:][:-1]
+        processed_line = slovar
 
 
     elif 'def' in line:
@@ -48,5 +49,11 @@ for line in lines:
 
 
 with open('output.txt', 'w') as output_file:
+    
     for processed_line in processed_lines:
-        output_file.write(f'{processed_line}\n')
+        if processed_line == slovar:
+            for i in range(len(slovar)):
+                output_file.write(f'{slovar[i]}\n')
+    
+        else:
+            output_file.write(f'{processed_line}\n')

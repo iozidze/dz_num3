@@ -2,4 +2,7 @@ peremennaya pi ravna 3:
 peremennaya nested ravna 52:
 constanta value ravna 100
 
-slovar bydet takim{'a': {1}, 'b': {2}, 'c': {3}, 'd': {4}}
+Peremennoi a sootvetstvyet znachenie 1
+Peremennoi d sootvetstvyet znachenie 4
+Peremennoi c sootvetstvyet znachenie 3
+Peremennoi b sootvetstvyet znachenie 2
