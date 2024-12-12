@@ -1,0 +1,4 @@
+def pi = 3:  
+def nested = 52:
+value = 100
+dict = { 'a': 1, 'b': 2, 'c': 3, 'd': 4 }

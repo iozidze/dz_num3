@@ -1,0 +1,5 @@
+peremennaya pi ravna 3:
+peremennaya nested ravna 52:
+constanta value ravna 100
+
+slovar bydet takim{'a': {1}, 'b': {2}, 'c': {3}, 'd': {4}}
